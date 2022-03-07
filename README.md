@@ -8,7 +8,7 @@ The site uses an icon or two from Font Awesome 5 and the typeface IBM Plex Mono 
 Special attention was given to responsiveness and smoothness of automatic movements. This includes the scrolling that occurs when navigation links are clicked, highlighting of hovered-over elements, and the collapsing navbar. The site also has 4 subtly different layouts for different screen sizes.
 
 The following tutorials helped me along the way:
- - How to use Google Fonts (fairy out-of-date): https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/
+ - How to use Google Fonts (fairly out-of-date): https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/
  - How to get text on opposite sides of the same line: https://css-tricks.com/left-align-and-right-align-text-on-the-same-line/
  - How to add icons: https://www.w3schools.com/icons/
  - Styling with Font Awesome: https://fontawesome.com/docs/web/style/styling
