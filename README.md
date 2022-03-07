@@ -24,7 +24,7 @@ The following tutorials helped me along the way:
 
 ## Time spent
 
-Though it is a sipmle site, it is my first. About 30 hours were spent creating it.
+Though it is a simple site, it is my first. About 30 hours were spent creating it.
 
 ## How to open
 
