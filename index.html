@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Padgett</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,600;1,600&display=swap" rel="stylesheet">    
+    <script defer src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a56c186c0b.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <main class="grid-container">
+        <div class="grid-item fullwidth-item" id="header">
+          <div class="opposite-sides">
+            <p class="align-left" id="initials">JP</p>
+            <nav class="align-right" id="nav-static">
+              <ul>
+                <li><a href="#project-header">Projects</a></li>
+                <li><a href="#experience-header">Experience</a></li>
+                <li><a href="#contact-header">Contact Me</a></li>
+              </ul>
+            </nav>
+            <button class="align-right" id="nav-button" value="Open Navigation" onclick="toggleNav()">
+              &#9776;
+            </button>
+          </div>
+          <nav id="nav-collapsible">
+            <ul>
+              <li><a href="#project-header">Projects</a></li>
+              <li><a href="#experience-header">Experience</a></li>
+              <li><a href="#contact-header">Contact Me</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="grid-item grid-spacer bottomless"></div>
+        <div class="grid-item grid-spacer bottomless"></div>
+        <div class="grid-item fullwidth-item bottomless" id="greeting">
+          <p>I am Jacob Padgett, an aspiring software engineer!</p>
+        </div>
+        <div class="grid-item grid-spacer"></div>
+        <div class="grid-item grid-spacer"></div>
+
+        <div class="grid-item fullwidth-item" id="intro">
+          <p>I’m a computer science major with three years’ experience in IT and the same tutoring calculus and chemistry. Some pastimes I enjoy are 3d printing, learning about Linux, and tinkering with electronics.</p>
+        </div>
+        
+        <div class="grid-item fullwidth-item section-header" id="project-header">
+          <h1>Projects</h1>
+        </div>
+
+        <div class="grid-item fullwidth-item project-container">
+          <div class="project" id="project1">
+            <h2>2D Collision Sim</h2>
+            <img class="slide" src="img/sim.jpg" alt="screenshot of simulator app" />
+            <p>Watch regular polygons bounce around and against each other with (somewhat) accurate physics! The graphics are reminiscent of an old arcade game. Feel free to add objects until your computer slows to a crawl; there is no upper limit. Made entirely in C++ and only depends on the SFML graphics library.</p>  
+            <a href=https://github.com/jpadgett314/2d-solid-collision>github 
+              <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>
+            </a>
+          </div>
+          <div class="project" id="project2">
+            <h2>The Kingdom of Frupal</h2>
+            <img class="slide" src="img/frupal.jpg" alt="screenshot of simulator app" />
+            <p>A simple console-based game vaguely similar to Nethack. Players explore by traveling through tiles on 2d map. Helpful and harmful objects are scattered throughout the map, including food that replenishes energy, weapons that damage enemies, obstacles, clues, and tools that add new game mechanics. Written in C++ and uses ncurses.</p>
+            <a href=https://github.com/padgett3/cs300-frupal-group9>github 
+              <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>
+            </a>
+          </div>
+          <div class="project" id="project3">
+            <h2>Cubic B-Splines</h2>
+            <img class="slide" src="img/spline.jpg" alt="screenshot of simulator app" />
+            <p>A simple demo of the mathematics behind cubic b-splines. Generates smooth curves composed of cubic parametric functions that pass close to all specified coordinates. Accepts both user input via the mouse and file/command line input. Programmed in C and draws using the X11 graphics library. </p>
+            <a href=https://github.com/padgett3/cubic-b-spline>github 
+              <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid-item fullwidth-item section-header" id="experience-header">
+          <h1>Experience</h1>
+        </div>
+        
+        <div class="grid-item experience" id="experience1">
+          <div class="opposite-sides">
+            <div class="align-left">
+              <h2>Field Services Technician</h3>
+              <p>Portland State University</p>
+            </div>
+            <p class="align-right dates">9/19 - 3/22</p>
+          </div>
+          <p>Provided on-site technical assistance to staff at PSU. Troubleshooted, diagnosed and resolved an array of desktop computer software and hardware problems; diagnosed problems with classroom technology; completed support requests in Jira.</p>
+        </div>
+        
+        <div class="grid-item experience" id="experience2">
+          <div class="opposite-sides">
+            <div class="align-left">
+              <h2>Peer Academic Mentor</h3>
+              <p>Mt. Hood Community College</p>
+            </div>
+            <p class="align-right dates">9/16 - 9/19</p>
+          </div>
+          <p>I tutored MHCC students in general chemistry and math (pre-algebra through vector calculus). My goal was to increase students' test scores and confidence in course material by teaching them how to find and organize information and prepare for exams.</p>
+        </div>
+        
+        <div class="grid-item experience" id="experience3">
+          <div class="opposite-sides">
+            <div class="align-left">
+              <h2>Youth Program Intern</h3>
+              <p>Mult. Co. Office of Diversity and Equity</p>
+            </div>
+            <p class="align-right dates">6/17 - 8/17</p>
+          </div>
+          <p>I tutored MHCC students in general chemistry and math (pre-algebra through vector calculus). My goal was to increase students' test scores and confidence in course material by teaching them how to find and organize information and prepare for exams.</p>
+        </div>
+        
+        <div class="grid-item experience" id="experience4">
+          <div class="opposite-sides">
+            <div class="align-left">
+              <h2>Grill Cook</h3>
+              <p>Burgerville, LLC</p>
+            </div>
+            <p class="align-right dates">1/16 - 9/16</p>
+          </div>
+          <p>Sanitized work areas and equipment; cleaned the kitchen, storeroom, and dining areas; prepared ingredients and food; served customers in an efficient and friendly manner. Without a doubt the toughest job I have had. </p>
+
+        </div>
+        <div class="grid-item fullwidth-item section-header" id="contact-header">
+          <h1>Contact Me</h1>
+        </div>
+
+        <div class="grid-item fullwidth-item" id="contact">
+          <form action="#" name="contact form">
+            <div class="form-row">
+              <div class="form-row-item">
+                <label for="form-name">Name</label>
+                <input id="form-name" type="text" />
+              </div>
+              <div class="form-row-item">
+                <label for="form-email">Email</label>
+                <input id="form-email" type="email" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-row-item">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" type="text" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="form-row button-row">
+              <input type="button" class="form-button" name="submit_button" value="Submit" id="form-submit">
+              <input type="reset" class="form-button" name="reset_button" value="Reset" id="form-reset">
+            </div>
+          </form>
+        </div>
+
+        <div class="grid-item fullwidth-item" id="footer">
+          <p class="align-left">© 2022 Jacob Padgett</p>
+          <p class="align-right">Layout inspired by <a href="https://www.mamboleoo.be/">Louis Hoebregts's personal site</a>.</p>
+        </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --gray1: #333333;
+  --gray2: #555555;
+  --gray3: #cccccc;
+  --gray4: #aaaaaa;
+
+  --black: #080808;
+  --teal: #006060;
+  --lightteal: #008080;
+  --purple: #800080;
+  --navy: #000080;
+  --cyan: #17a2b8;
+  --violetred: #c71585;
+  --red: #ff0000;
+  --orange: #ffa500;
+  --green: #006400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.2em;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}  
+
+a {
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:link,
+a:visited {
+  color: var(--black);
+}
+
+a:hover,
+a:active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.opposite-sides +* {
+  clear: both;
+}
+
+.align-left {
+  float: left;
+  text-align: left;
+}
+
+.align-right {
+  float: right;
+  text-align: right;
+}
+
+
+/* Properties for main grid layout */
+
+.grid-container {
+  display: grid;
+  grid: 1fr / [content-left] 1fr [content-right];
+}
+
+.grid-item {
+  background-color: var(--white);
+  color: var(--black);
+  border-bottom: 1px solid var(--black);
+  padding: 40px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.fullwidth-item {
+  grid-column: content-left / content-right;
+}
+
+.section-header {
+  padding: 10px 5px 25px 5px;
+}
+
+
+/* Properties for header, including navbars */
+
+#header {
+  padding: 0;
+}
+
+#header .opposite-sides {
+  height: 60px;
+}
+
+#initials {
+  font-style: italic;
+  font-size: 36px;
+  height: inherit;
+  margin: 0;
+  padding: 6px 20px 0px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 20px 20px 20px 20px;
+}
+
+#nav-static {
+  display: none;
+}
+
+#nav-static ul {
+  display: flex;
+  height: 60px;
+}
+
+#nav-static li {
+  margin: 0;
+  padding: 20px 0px 20px 0px;
+  border-left: 1px solid var(--black);
+}
+
+#nav-button {
+  background-color: var(--white);
+  color: var(--black);
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid var(--black);
+  font-size: 24px;
+  padding: 0px 20px 0px 20px;
+}
+
+#nav-collapsible {
+  height: 0px;
+  transition: 0.5s;
+}
+
+#nav-collapsible li {
+  border-top: 1px solid var(--black);
+}
+
+#nav-collapsible a {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Properties for greeting and intro sections */
+
+.grid-spacer {
+  display: none;
+}
+
+#greeting,
+#intro {
+  font-size: 48px;
+  padding: 0px 15% 0px 15%;
+}
+
+
+/* Properties for projects */
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+}
+
+.project {
+  width: 100%;
+  padding: 40px;
+}
+
+#project1,
+#project2 {
+  border-bottom: 1px solid var(--black);
+}
+
+.project img {
+  width: 100%;
+  margin: 20px 0px 30px 0px;
+}
+
+.project p {
+  margin-bottom: 36px;
+}
+
+
+/* Properties for work experience cells */
+
+.experience {
+  grid-area: span 1 / span 1;
+}
+
+.experience .opposite-sides > * {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.experience .align-left > *,
+.experience .align-right > * {
+  margin: 0px;
+}
+
+.dates {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+/* Properties for work contact form */
+
+#contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.form-row {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 20px;
+  padding-top: 1.5em;
+}
+
+.form-row-item {
+  flex-grow: 1;
+}
+
+input,
+label,
+textarea {
+  float: left;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+}
+
+textarea,
+[type="text"],
+[type="email"] {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  margin-top: 0.75em;
+  outline: none;
+}
+
+textarea:focus,
+[type="text"]:focus,
+[type="email"]:focus {
+  border-bottom: 2px solid var(--black);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button-row {
+  justify-content: center;
+}
+
+.form-button {
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 0;
+  border: 1px solid var(--black);
+  border-color: var(--black);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.form-button:hover,
+.form-button:active {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+
+/* Properties for footer */
+
+#footer {
+  border-bottom: 0px;
+  text-align: end;
+  padding: 10px 40px 10px 40px;
+}
+
+#footer a {
+  text-decoration: underline;
+}
+
+
+/* Media queries for adjusting columns and borders.
+ * Collapsible navbar is also hidden by default.
+ */
+
+ /* Screen is at least medium */ 
+
+@media (min-width: 768px) { 
+  body {
+    margin: 20px 35px 20px 35px;
+  }
+
+  .grid-container {
+    border-top: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+  }
+
+  .grid-item {
+    border-bottom: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+  }
+
+  #footer {
+    border-bottom: 1px solid var(--black);;
+  }
+}
+
+/* Screen is at least large */
+
+@media (min-width: 1024px) {
+  body {
+    margin: 20px 50px 20px 50px;
+  }
+ 
+  #nav-static {
+    display: block;
+  }
+
+  #nav-collapsible,
+  #nav-button {
+    display: none;
+  }
+
+  .grid-spacer {
+    display: block;
+    height: 60px;
+    padding: 0px;
+  }
+
+  .bottomless  {
+    border-bottom: none;
+  }
+
+  #project1,
+  #project3 {
+    border-right: 1px solid var(--black);
+  }
+
+  .grid-container {
+    grid: 1fr / [content-left] 1fr 1fr [content-right];
+  }
+
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Screen is at least very large */
+
+@media (min-width: 1400px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #project1,
+  #project2,
+  #project3 {
+    border: none;
+  }
+
+  #project1,
+  #project2 {
+    border-right: 1px solid var(--black);
+  }
+}
