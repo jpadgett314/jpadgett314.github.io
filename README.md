@@ -1,4 +1,4 @@
-# padgett3.github.io
+# jpadgett314.github.io
 This is my personal website, originally created for CS410 - Intro to Web Development at Portland State University. Having since expanded my knowledge of web development, this project is not an accurate reflection of my current knowledge, but I plan to still use it as a non-webdev project portfolio. It is currently deployed to https://jpadgett314.github.io/ via GitHub pages. 
 
 The site uses icons from Font Awesome 5 and the typeface IBM Plex Mono from Google Fonts. It depends on nothing else; there is no Bootstrap to be found here!
