@@ -9,3 +9,7 @@ function toggleNav() {
     navOpen = true;
   }
 }
+
+function contactMe() {
+  window.alert("Error: not implemented.");
+}
